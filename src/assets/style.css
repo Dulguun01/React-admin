@@ -1,0 +1,29 @@
+.Table {
+  border: 10px solid;
+}
+
+.main-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.off-menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  top: 56px;
+  color: white;
+  transition: 0.2s all;
+}
+
+.off-sibling-menu {
+  padding-left: 200px;
+  transition: 0.2s all;
+}
+
+.off-sibling-menu + .off-sibling-menu {
+  padding-left: 0;
+}
