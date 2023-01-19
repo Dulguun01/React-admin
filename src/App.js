@@ -12,7 +12,7 @@ import SignUp from "./components/Page/SignUp";
 import SigninSuccess from "./components/Page/SigninSuccess";
 import Categories from "./components/Page/Categories";
 
-const Articles = ({ menuSHow, handleShow, show, handleClose }) => {
+const Articles = ({ handleShow  }) => {
   return (
     <>
       <MainContent handleShow={handleShow} />
@@ -45,7 +45,7 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route
           path="/Articles"
-          element={<Articles menuShow={menuSHow} handleShow={handleShow} />}
+          element={<Articles handleShow={handleShow} />}
         />
         <Route path="/categories" element={<Categories />} />
       </Routes>
