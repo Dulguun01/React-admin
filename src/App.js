@@ -22,11 +22,9 @@ const Articles = ({ handleShow  }) => {
 
 export function App() {
   const [signedIn, setSignedIn] = useState(false);
-  const [show, setShow] = useState(false);
   const [menuSHow, setMenuShow] = useState(false);
   const [me, setMe] = useState(undefined);
 
-  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   useEffect(() => {
     return () => {
